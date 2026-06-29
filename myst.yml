@@ -27,10 +27,11 @@ project:
   bibliography:
     - references.bib
   
-  # setup for interactivity with Thebe and Binder
   jupyter:
-    binder:
-      repo: https://github.com/executablebooks/thebe-binder-base
+    # setup for interactivity with Thebe and Binder
+    # binder:
+    #   repo: https://github.com/executablebooks/thebe-binder-base
+    lite: true
 
   plugins:
     - https://github.com/jupyter-book/myst-plugins/releases/download/iframe-to-qr-pdf/iframe-to-qr-pdf.mjs\
