@@ -1,5 +1,5 @@
 ---
-title: The TUD starterkit for open publishing with JupyterBook
+title: Jupyterbook for TN21025 (CEI)
 site:
   hide_outline: true
   hide_toc: true
@@ -12,21 +12,14 @@ numbering:
 
 no-update-date: true
 ---
+<br> 
 
-+++ { "kind": "split-image" }
+<div style-'text-align: center'>
+The Jupyterbook textbook for TN21025: <br> Circuits, Electronics, and Instrumentation 
+</div>
 
-## The TUD starterkit for open publishing with JupyterBook
+Originally created by *Prof. Dr. Gary Steele*
 
-a quick setup for your open publishing project.
+![](figures/electronics.jpg)
 
-{button}`Use this template <https://github.com/new?template_name=starterkit&template_owner=TUD-JB-OS>`  
-
-Originally created by  
-*Freek Pols*
-
-![](figures/cover.png)
-
-+++
-
-This thesis reports on the use of Jupyter Book for open publishing at TU Delft - especially bachelor and master thesis. It provides a quick setup for your open publishing project, including a template and guidelines for using Jupyter Book effectively. The starterkit is designed to help you create and share your research in an open and accessible way.
-
+The material for our course. 
