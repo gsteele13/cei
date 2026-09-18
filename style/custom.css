@@ -89,3 +89,9 @@ body {
     font-weight: bold;
   }
 }
+
+.centered-output img,
+.centered-output svg {
+  display: block;
+  margin-inline: auto;
+}
