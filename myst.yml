@@ -1,11 +1,11 @@
 # $env:BASE_URL = "/starterkit"
 version: 1
 project:
-  title: Jupyterbook for TN20125 (CEI)
+  title: TU Delft's JB Starterkit
   # description:
   keywords: [Jupyter Book, Open Science, TU Delft, Starterkit]
 
-  github: https://github.com/TUD-JB-OS/starterkit # change this to your own repository
+  github: https://github.com/gsteele13/cei # change this to your own repository
   date: 2026-01-31
   thumbnail: style/thumbnail.jpg
   numbering: 
@@ -27,11 +27,10 @@ project:
   bibliography:
     - references.bib
   
+  # setup for interactivity with Thebe and Binder
   jupyter:
-    # setup for interactivity with Thebe and Binder
-    # binder:
-    #   repo: https://github.com/executablebooks/thebe-binder-base
-    lite: true
+    binder:
+      repo: https://github.com/executablebooks/thebe-binder-base
 
   plugins:
     - https://github.com/jupyter-book/myst-plugins/releases/download/iframe-to-qr-pdf/iframe-to-qr-pdf.mjs\
@@ -62,6 +61,6 @@ site:
   # custom parts
   parts:
     footer:       style/footer.md
-    # banner:       Visit our new website at [https://jboss.tudelft.nl](https://jboss.tudelft.nl) for the latest updates and resources! See also our newest [Typst template](https://github.com/TUD-JB-OS/typst_template.git) version
+    banner:       Visit our new website at [https://jboss.tudelft.nl](https://jboss.tudelft.nl) for the latest updates and resources! See also our newest [Typst template](https://github.com/TUD-JB-OS/typst_template.git) version
     navbar_end:   style/navbar_end.md
 # 
