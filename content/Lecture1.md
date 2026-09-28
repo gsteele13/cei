@@ -288,11 +288,11 @@ $$
 
 If I have two resistor $R_1$ and $R_2$ in parallel, their equivalent resistance is $R_1 || R_2 = R_1 R_2 / (R_1 + R_2)$, where we have introduced the convenient notation $||$ to represent the mathematical operation of taking the inverse of the sum of the inverses. 
 
-These are likely familiar to you already: in this course, you will use these exetensively, and will soon extend these concepts to cover the behaviour of arbitrary linear impedances from elements such as inductances and capacitances. 
+These are likely familiar to you already: in this course, you will use these exetensively to redraw and simplify circuits, and will soon extend these concepts to cover the behaviour of arbitrary linear impedances from elements such as inductances and capacitances. 
 
 +++
 
-### Example: applying Kirchoff's laws
+### Example: Applying Kirchoff's laws
 
 To illustrate the above, we will consider the following circuit:
 
@@ -325,11 +325,11 @@ with schemdraw.Drawing() as d:
     
 ```
 
-In the above, we have labelled all the potentially independent node voltages and branch currents. 
+In the above, we have labelled all the potentially independent node voltages and branch currents: branches connect two nodes, and two points on the circuit are labelled as a single node as long as they are not connected by an (ideal) wire. 
 
 There are two ways to solve this: the first way to do this is using Kirchoff's laws. Formally, there are 4 nodes and 5 branches in this circuit, leading to 4 node voltage variables and 5 branch current variables (9 unknowns), as illustrated above. 
 
-Kirchoff's current law gives us 4 equations for the 4 nodes:
+Kirchoff's current law for the branches connected to the 4 nodes gives us 4 equations:
 
 \begin{align}
 I_1 - I_2 & = 0 \\
@@ -338,23 +338,22 @@ I_4 - I_5 & = 0 \\
 I_5 + I_3 - I_1 & = 0
 \end{align}
 
-Kirchoff's voltage law gives us two equations for the left and right loop:
-
+Kirchoff's voltage law gives us two equations for the left and right loops you can see in the drawing, written here for both loops running clockwise:
 \begin{align}
 (V_1 - V_4) + (V_2 - V_1) + (V_4 - V_2) & = 0 \\
 (V_2 - V_4) + (V_3 - V_2) + (V_4 - V_3) & = 0
 \end{align}
 
+What about the outer loop? We could also use the voltage law to write down an equation for that loop, but it would not give us independent information: it would reduce to one of the two equations above upon substitution. In order to generate *independent* equations from Kirchoff's voltage law, you should write out equations using only [independent meshes](https://en.wikipedia.org/wiki/Mesh_analysis) consistent of loops that do not contain any other loops. 
+
+*(The page on linked above on mesh analysis also provides an useful alternative approach using mesh loop currents rather than branch currents, based using the superposition principle, can make it faster to generate a minimal set of equations from Kirchoff's laws, see the section on the superposition principle below.)*
+
 We now have 6 equations and 9 unknowns. There are three more things that we can use:
 
-* The two voltage sources give the same voltage drop *independent* of how much current is flowing through them: this reduces us to 6 equations and 7 unknowns
+* The two voltage sources give the same voltage drop *independent* of how much current is flowing through them: this eliminates two unknowns, bringing us to 6 equations and 7 unknowns
 * The absolute voltage does not matter (we can choose one point to be [ground](https://en.wikipedia.org/wiki/Ground_(electricity)) if we like), leaving us with 6 equations and 6 unknowns.
 
-Using Kirchoff's laws, and the fact that a votlage source always produces the same voltage difference independent of the current flowing through it, we can the solve the above equations to get all our our node voltages and currents. 
-
-
-
-
+Using Ohm's law for the resistors, we can then write all of the equations in terms of current, and by substituting equations into each other to eliminate varibles one by one, we can solve for all branch currents and node voltages. 
 
 +++
 
