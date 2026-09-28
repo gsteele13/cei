@@ -1,7 +1,7 @@
 (lecture1)=
 # Review of Voltages, Currents, and Kirchoffs Laws
 
-> In this lecture, we will jump back into electrical circuits! We will start by reviewing familiar concepts, such as voltage, currents, and Kirchoff's laws. While we are doing this, we take a closer look at the wires, nodes, and brances we draw in our circuits to get a better understanding of what they mean. We will look at the superposition principle for circuits, as both a conceptual shortcut for solving certain trikier problems, and as a more general concept for the case when we have multiple types of signals in our circuit, such as AC and DC voltages and currents and small signal analysis.
+> In this lecture, we will jump back into electrical circuits! We will start by reviewing familiar concepts, such as voltage, currents, and Kirchoff's laws. While we are doing this, we take a closer look at the wires, nodes, and brances we draw in our circuits to get a better understanding of what they mean. We will look at the mathematical formulation of Kirchoff's laws and see how to translate the circuits into equations using them. We will look at the superposition principle for circuits, as both a conceptual shortcut for solving certain trikier problems, and as a more general concept for the case when we have multiple types of signals in our circuit, such as AC and DC voltages and currents and small signal analysis.
 
 <!-- (lo-l1)=
 ## Learning objectives Lecture 1
@@ -97,13 +97,13 @@ Wires also have capacitance: unlike inductance or resistance, capacitance of a w
 
 Note that you *can* include these effects of "non-ideal" wires in your modelling of the circuit by adding lumped (or [distributed](https://en.wikipedia.org/wiki/Distributed-element_model)) elements to account for the behaviour of the wire to your circuit model, and we will do that later in the course! But for now, working at low enough frequencies and with low enough resistance wires, our "ideal wires" are good approximations of the actual wires in the circuits you will make. And even when we takle how do deal with "real wires" theoretically, we will break them down into discrete lumped elements that we will always draw connected by "ideal circuit diagram wires". 
 
-### Voltages in ciruits
+### Voltages in circuits
 
 Once we have accepted ideal wires as little tunnels that instantaneously equilabrate voltages from one node of the circuit to the other, then life in theoretical circuit analysis becomes realatively simple: we do not need to solve the 3-dimensional partial differential equations that come from Coulomb's law from electrostatics, or Ampere's law from magnetostatics. All of the complexity of your electromagnetism courses is mapped into the voltage dropped across the lumped elements we draw in our circuit.
 
 While this seems like a drastic approximation, it can be highly accurate, and if you are really committed, you can actually rebuild all of 3-dimensional electromagntism by meashing 3-dimensional space into a network of nodes that you connect with (mutual) inductances and capacitances, which is what you actually do when you [solve electromagnetic problems with finite element methods](https://en.wikipedia.org/wiki/Computational_electromagnetics).
 
-### Ohms law and sign conventions
+### Ohms law
 
 One of the circuit elements you have certainly studied in the past is a [resistor](https://en.wikipedia.org/wiki/Resistor). A resistor is a circuit element which produces a current proportional to the voltage drop across it:
 
