@@ -6,7 +6,8 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
-jupyter = "jupyter lab"
+jupyterlab = "jupyter lab"
+notebook = "jupyter notebook"
 myst = "myst start"
 execute = "myst execute"
 build = { cmd = "myst build", depends_on = ["execute"] }
@@ -20,6 +21,7 @@ scipy = ">=1.18.0,<2"
 ipywidgets = ">=8.1.9,<9"
 pandas = ">=3.0.5,<4"
 jupytext = ">=1.19.5,<2"
+notebook = ">=7.6"
 
 [pypi-dependencies]
 jupyterlab-myst = ">=2.7.0, <3"

@@ -23,6 +23,8 @@ project:
     - README.md
     - content/Cheatsheet.md
 
+  exclude_code_inputs: true
+  
   # include a bibliography file for references in the project  
   bibliography:
     - references.bib
