@@ -342,6 +342,9 @@ These are likely familiar to you already: in this course, you will use these exe
 To illustrate using Kirchoff's laws to solve more complex circuits, we will consider the following circuit:
 
 ```python
+:tag: hide-input
+:class: centered-output
+    
 import schemdraw
 import schemdraw.elements as elm
 from IPython.display import SVG, display
