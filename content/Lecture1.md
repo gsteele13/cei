@@ -91,7 +91,7 @@ On first sight, this may not seem so strange: in electrostatics, you know that m
 
 Here, our wires are even more special, though, because as we draw them in the circuit, the voltage across the wire is also instantaneously transmitted to the other side. In our schematics, the voltage across anything we draw a "wire" is **always** by definition zero.
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -149,7 +149,7 @@ $$
 
 For our resistor, and also in general for all of the components we will study, the voltage drops between the two nodes of the component and the current flows from one node to the other. The sign is negative because you need to supply a voltage difference in order to get current to flow through the resistor. Note it is important to get the convensions of signs right when you draw this in a circuit: in the equation above, the voltage drop follows the same direction as the current flow:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -161,7 +161,7 @@ with schemdraw.Drawing():
 
 For the choice of convention that the current is flowing downwards, and if we choose to define the bottom of the resistor as ground, then you will get a voltage $V = IR$ at the upper node:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -204,7 +204,7 @@ When connecting elements together in circuits, the relation of the voltages at t
 
 The first of Kirchoff's laws is related to the conservation of charge. Since the ideal wires we draw in our circuit diagrams have no capacity to hold charge (capacitance), the currents flowing in and out of any node in the circuit must sum up to zero:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -272,7 +272,7 @@ Here, one has to be very careful about sign conventions: when applying this form
 
 Here is a concrete example:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -341,7 +341,7 @@ These are likely familiar to you already: in this course, you will use these exe
 
 To illustrate using Kirchoff's laws to solve more complex circuits, we will consider the following circuit:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -406,7 +406,7 @@ Using Ohm's law for the resistors, we can then write all of the equations in ter
 
 As you may have noticed, the equations describing Kirchoff's laws are all linear equations (linear in the branch currents and node voltages). A very useful consequence of this is that we can use the [superposition principle](link) to simplfiy and solve circuits: for a different set of values of the sources, the solution of the sum of different source values is the sum of the solutions. We will consider the same circuit as above:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -440,7 +440,7 @@ with schemdraw.Drawing() as d:
 
 A second approach to solve this kind of circuit is to use the principle of superposition. Using the superposition principle, we can solve this in two steps: First, set the right hand voltage source to zero volts. We will call this scenario "A" of our superposition calculation. The circuit that results is the following:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
@@ -489,7 +489,7 @@ And from there we can also easily find the current through the last two resistor
 
 The second step is to repeat the analysis but then replacing the left hand voltage by 0V:
 
-```python
+```{code-cell} python
 :tag: hide-input
 :class: centered-output
     
