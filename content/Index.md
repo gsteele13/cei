@@ -12,7 +12,7 @@ numbering:
 
 no-update-date: true
 ---
-<br> 
+
 
 <div style-'text-align: center'>
 The Jupyterbook textbook for TN21025: <br> Circuits, Electronics, and Instrumentation 
