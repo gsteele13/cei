@@ -22,7 +22,10 @@ ipywidgets = ">=8.1.9,<9"
 pandas = ">=3.0.5,<4"
 jupytext = ">=1.19.5,<2"
 notebook = ">=7.6"
+scikit-learn = ">=1.9.1,<2"
+opencv = ">=5.0.0,<6"
 
 [pypi-dependencies]
 jupyterlab-myst = ">=2.7.0, <3"
 schemdraw = ">=0.23"
+helper-functions = ">=2.0.11, <3"
