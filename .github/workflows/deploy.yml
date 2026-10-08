@@ -70,7 +70,7 @@ jobs:
 
       - name: Build PDF
         run: |
-          myst build --typst > build.log 2>&1 || true
+          myst build --execute --typst > build.log 2>&1 || true
 
       - name: Upload Output PDF as Artifact
         uses: actions/upload-artifact@v4
