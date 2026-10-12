@@ -1,12 +1,12 @@
 # $env:BASE_URL = "/starterkit"
 version: 1
 project:
-  title: TU Delft's JB Starterkit
+  title: Circuits, Electronics, and Instrumentation
   # description:
-  keywords: [Jupyter Book, Open Science, TU Delft, Starterkit]
+  # keywords: [Jupyter Book, Open Science, TU Delft, Starterkit]
 
   github: https://github.com/gsteele13/cei # change this to your own repository
-  date: 2026-01-31
+  date: 2028-02-01
   thumbnail: style/thumbnail.jpg
   numbering: 
     title: true

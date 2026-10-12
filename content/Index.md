@@ -1,10 +1,5 @@
 ---
-title: Jupyterbook for TN21025 (CEI)
-site:
-  hide_outline: true
-  hide_toc: true
-  hide_title_block: true
-  hide_authors: false
+title: Circuits, Electronics, and Instrumentation 
       
 numbering:
   title:
@@ -13,13 +8,6 @@ numbering:
 no-update-date: true
 ---
 
+Welcome to the online textbook of Circuits, Electronics & Instrumentation (TN21025), a second year course in the Applied Physics (Technische Natuurkunde) Bachelor program at TU Delft:
 
-<div style-'text-align: center'>
-The Jupyterbook textbook for TN21025: <br> Circuits, Electronics, and Instrumentation 
-</div>
-
-Originally created by *Prof. Dr. Gary Steele*
-
-![](figures/electronics.jpg)
-
-The material for our course. 
+https://www.studiegids.tudelft.nl/courses/study-guide/educations/35293
