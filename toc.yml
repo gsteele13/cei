@@ -4,6 +4,7 @@ project:
     - file: content/Index.md
     - file: content/Lecture1.ipynb
     - file: content/Lecture2.ipynb
+    - file: content/Lecture3.ipynb
     # - file: content/Quickstart.md
     # - file: content/Introduction.md
     # - file: content/Theory.md
