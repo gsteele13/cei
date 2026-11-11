@@ -52,3 +52,38 @@ def show_svg(file, scale=1.0):
 
 from matplotlib_inline.backend_inline import set_matplotlib_formats
 set_matplotlib_formats("svg")        # or "pdf", or both: set_matplotlib_formats("svg", "pdf")
+
+import base64
+import mimetypes
+from IPython.display import HTML, display
+
+def show_image(file, width_percent=70):
+    # Read and encode image to base64
+    with open(file, 'rb') as f:
+      image_data = f.read()
+    base64_encoded = base64.b64encode(image_data).decode('utf-8')
+    
+    # Get MIME type
+    mime_type, _ = mimetypes.guess_type(file)
+    if mime_type is None:
+      mime_type = 'image/jpeg'
+    
+    # Responsive and centered HTML structure
+    html_code = f"""
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <style>
+            .responsive-img {{
+                width: 100%;
+                height: auto;
+            }}
+            @media (min-width: 768px) {{
+                .responsive-img {{
+                    width: {width_percent}%;
+                }}
+            }}
+        </style>
+        <img src="data:{mime_type};base64,{base64_encoded}" class="responsive-img">
+    </div>
+    """
+    
+    display(HTML(html_code))
