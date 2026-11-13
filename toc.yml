@@ -7,6 +7,7 @@ project:
     - file: content/Lecture2.ipynb
     - file: content/Lecture3.ipynb
     - file: content/Lecture4.ipynb
+    - file: content/Lecture5.ipynb
     # - file: content/Quickstart.md
     # - file: content/Introduction.md
     # - file: content/Theory.md
